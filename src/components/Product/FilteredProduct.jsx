@@ -39,7 +39,7 @@ const FilteredProduct = () => {
               {brand}
             </h1>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 py-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 py-8 ">
             {chocolate &&
               chocolate
                 .filter((item) => item.brand === brand)

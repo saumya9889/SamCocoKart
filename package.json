@@ -1,8 +1,8 @@
 {
-  "name": "toppiffy",
+  "name": "SamCocoKart",
   "private": true,
   "version": "0.0.0",
-  "proxy": "https://toppiffy-ecommerce.netlify.app/",
+  "proxy": "https://SamCocoKart-ecommerce.netlify.app/",
   "type": "module",
   "scripts": {
     "dev": "vite",

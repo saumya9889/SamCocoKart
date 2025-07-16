@@ -9,7 +9,7 @@ const CardsDetail = ({ item, id }) => {
 
   return (
     <div className="flex justify-center items-center mx-8 my-0 mt-16">
-      <div className="bg-gray-100 p-4 md:p-6 lg:p-8 w-full sm:w-[220px] md:w-[180px] lg:w-[260px] rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+      <div className="bg-[linear-gradient(120deg,_#ffb6c133_0%,_#ffffff_50%,_#ff69b457_100%)] p-4 md:p-6 lg:p-8 w-full sm:w-[220px] md:w-[180px] lg:w-[260px] rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
         <Link
           to={`/${item.brand}/${id}`}
           onClick={() => dispatch(singleProduct(id))}

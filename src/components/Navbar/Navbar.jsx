@@ -17,7 +17,7 @@ const Nav = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const totalQuantity = useSelector((state) => state.cart.totalAmount);
+  const totalQuantity = useSelector(state => state.cart.totalQuantity); // ✅ FIXED
   const isSpecialMember = useSelector(selectIsSpecialMember);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const Nav = () => {
         toast.success("Logout Successful");
         navigate("/login");
       })
-      .catch((error) => {
+      .catch(error => {
         toast.error(error.message);
       });
   };
@@ -51,20 +51,25 @@ const Nav = () => {
   ];
 
   return (
-    <div className="sticky z-50 shadow-md w-full top-0 left-0">
-      <nav className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+    <nav className="sticky top-0 left-0 z-50 shadow-md w-full">
+      <div
+        className="md:flex items-center justify-between px-6 py-3"
+        style={{ background: "linear-gradient(135deg, #ff99cc, #ffffff)" }}
+      >
+        {/* Logo */}
         <div className="cursor-pointer flex items-center">
           <Link to="/">
             <img
               src={Image}
               alt="CocoKart Logo"
-              className="w-[15rem]"
-              width="300" // Set explicit width based on the actual size
-              height="200" // Set explicit height based on the actual size
+              className="w-[12rem]"
+              width="300"
+              height="200"
             />
           </Link>
         </div>
 
+        {/* Mobile Menu Toggle */}
         <div
           onClick={() => setOpen(!open)}
           className="text-3xl absolute right-8 cursor-pointer md:hidden"
@@ -73,9 +78,12 @@ const Nav = () => {
           <GiChocolateBar />
         </div>
 
+        {/* Navigation Links */}
         <ul
-          className={`md:flex md:items-center absolute md:static text-amber-600 bg-white z-50 left-0 w-full md:w-auto transition-all duration-200 ease-in-out ${
-            open ? "top-20" : "top-[-490px]"
+          className={`md:flex md:items-center absolute md:static text-amber-600 bg-white md:bg-transparent z-50 left-0 w-full md:w-auto transition-all duration-500 ease-in-out ${
+            open
+              ? "top-24 opacity-100"
+              : "-top-[500px] opacity-0 md:opacity-100"
           }`}
         >
           {Links.map((link, index) => (
@@ -90,13 +98,13 @@ const Nav = () => {
                     isActive ? "text-black" : "text-amber-600"
                   }`
                 }
-                aria-label={`Navigate to ${link.name}`}
               >
                 {link.name}
               </NavLink>
             </li>
           ))}
 
+          {/* Special Member Dashboard */}
           {isSpecialMember && (
             <li className="md:ml-8 lg:text-xl md:text-sm md:my-0 my-7 mx-8">
               <NavLink
@@ -112,7 +120,8 @@ const Nav = () => {
             </li>
           )}
 
-          <li className="md:ml-8 text-xl md:my-0 my-7 mx-8 relative w-[10%]">
+          {/* Cart */}
+          <li className="md:ml-8 text-xl md:my-0 my-7 mx-8 relative">
             <NavLink
               to="/cart"
               className={({ isActive }) =>
@@ -123,23 +132,23 @@ const Nav = () => {
             >
               <FaShoppingBag />
               {totalQuantity > 0 && (
-                <span className="absolute -top-6 bg-red-500 text-white px-1 rounded-full">
+                <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs px-2 rounded-full">
                   {totalQuantity}
                 </span>
               )}
             </NavLink>
           </li>
 
+          {/* User Dropdown */}
           <li className="md:ml-8 text-xl md:my-0 my-7 mx-8 relative">
             <button
               className="text-amber-600 font-semibold rounded inline-flex items-center"
               onClick={() => setDrop(!drop)}
-              aria-label="User account options"
             >
               <FaRegUser />
             </button>
             {drop && (
-              <div className="absolute z-50 mt-2 w-36 bg-white rounded-md shadow-lg">
+              <div className="absolute right-0 mt-2 w-36 bg-white rounded-md shadow-lg z-50">
                 {auth.currentUser ? (
                   <button
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
@@ -159,8 +168,8 @@ const Nav = () => {
             )}
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 

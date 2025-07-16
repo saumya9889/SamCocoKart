@@ -24,7 +24,7 @@ const Footer = () => {
                     className="mb-4 mx-auto md:mx-0"
                   />
                   <p className="text-sm md:w-70 w-full mx-auto md:mx-0 mb-4">
-                    Toppiffy is India's #1 Omni-channel retailer and official
+                    SamCocoKart is India's #1 Omni-channel retailer and official
                     distributor of Imported Chocolates. All our products are
                     100% authentic and sourced directly from brands.
                   </p>
@@ -62,13 +62,10 @@ const Footer = () => {
                   <ul className="list-none m-0 mb-4">
                     <li className="mb-1 flex items-center justify-center md:justify-start">
                       <FaPhone className="mr-1" />
-                      <span>+91 9893018968</span>
+                      <span>+91 9821871818</span>
                     </li>
-                    <Link
-                      to="mailto:roshankumar.02yadav@gmail.com"
-                      className="mb-1"
-                    >
-                      roshankumar.02yadav@gmail.com
+                    <Link to="mailto:sammishra1306@gmail.com" className="mb-1">
+                      sammishra1306@gmail.com
                     </Link>
                   </ul>
                   <div className="flex justify-center md:justify-start space-x-4">

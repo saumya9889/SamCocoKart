@@ -56,16 +56,16 @@ const ProductList = () => {
 
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <div className="flex-grow mt-2">
+        <div className="flex-grow mt-2 bg-[linear-gradient(135deg,_#ff99cc8a,_#ffffff)]">
           <h1 className="text-4xl font-bold tracking-normal leading-none my-4 sm:mx-12">
             All Products
           </h1>
-          <div className="flex justify-center items-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="flex justify-center items-center ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
               {products.map((item, index) => (
                 <div
                   key={index}
-                  className="flex justify-center items-center my-0"
+                  className="flex justify-center items-center my-0 "
                 >
                   <CardsDetail item={item} brand={item.brand} id={item.id} />
                 </div>

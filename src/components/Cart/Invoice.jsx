@@ -16,9 +16,9 @@ const Invoice = () => {
   const shippingInfo = useSelector(selectShippingInfo);
   const { orderId } = useParams();
   const dispatch = useDispatch();
-  const cart = useSelector((state) => state.cart.cart);
+  const cart = useSelector(state => state.cart.cart);
   const totalPriceWithTaxes = useSelector(
-    (state) => state.cart.totalPriceWithTaxes
+    state => state.cart.totalPriceWithTaxes
   );
 
   const [invoiceNumber, setInvoiceNumber] = useState("");
@@ -42,7 +42,7 @@ const Invoice = () => {
 
   const handleDownloadPDF = () => {
     const input = document.getElementById("invoice");
-    html2canvas(input).then((canvas) => {
+    html2canvas(input).then(canvas => {
       const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF("p", "mm", "a4");
       const pdfWidth = pdf.internal.pageSize.getWidth();
@@ -104,8 +104,8 @@ const Invoice = () => {
                   <p>Gurgaon, Haryana, 122001, IN</p>
                   <p>PAN No: BGDPY6702M</p>
                   <p>GST Registration No: 29AACFV3325K1ZY</p>
-                  <p>Email: sammishra@gmail.com</p>
-                  <p>Phone: +91 9876543210</p>
+                  <p>Email: sammishra1306@gmail.com</p>
+                  <p>Phone: +91 9821871818</p>
                 </div>
                 <div className="text-right">
                   <p className="font-bold">Billing Address :</p>
