@@ -71,7 +71,7 @@ const Header = () => {
         />
         <link rel="preload" href={images[0]} as="image" />
       </Helmet>
-      <header>
+      <header className="bg-[linear-gradient(135deg,_rgba(255,153,204,0.2),_rgba(255,255,255,0.95))]">
         <Navbar />
         <div className="w-full relative ">
           <Link to="/product">
@@ -94,10 +94,10 @@ const Header = () => {
               .slice(currentBrandIndex, currentBrandIndex + visibleBrandCount)
               .map((brand, index) => (
                 <div key={index}>
-                  <div className="justify-center items-center rounded border border-amber-600 hover:text-amber-600 ">
+                  <div className="justify-center items-center rounded border border-amber-600 hover:bg-[linear-gradient(135deg,_#ff99cc,_#ffffff)]">
                     <Link to={`/${brand.name}`}>
                       <div
-                        className="bg-white hover:bg-amber-500 p-4 text-sm cursor-pointer flex justify-center items-center h-[6rem]"
+                        className="bg-white hover:bg-[linear-gradient(135deg,_#ff99cc,_#ffffff)] p-4 text-sm cursor-pointer flex justify-center items-center h-[6rem]"
                         onClick={() => handleFilter(brand.name)}
                       >
                         <img

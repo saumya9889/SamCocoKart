@@ -19,7 +19,7 @@ const ContactUs = () => {
             'url("https://images.pexels.com/photos/7525164/pexels-photo-7525164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
         }}
       >
-        <div className="bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative max-w-md md:max-w-lg lg:max-w-xl w-full mx-4 md:mx-auto">
+        <div className="bg-[linear-gradient(120deg,_#f16e82_0%,_#ffffff_50%,_#ff69b4db_100%)] border-slate-400 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative max-w-md md:max-w-lg lg:max-w-xl w-full mx-4 md:mx-auto">
           <div>
             <h1 className="text-4xl font-bold text-white mb-6 text-center">
               Contact Us
@@ -69,7 +69,7 @@ const ContactUs = () => {
 
               <button
                 type="submit"
-                className="w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-amber-600 hover:text-white py-2 transition-colors duration-300"
+                className="w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-[linear-gradient(135deg,_#ff99cc,_#ffffff)] hover:text-white py-2 transition-colors duration-300"
               >
                 Submit
               </button>
@@ -77,7 +77,7 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="absolute top-10 left-4 md:left-12 transform -translate-x-1 -translate-y-1 text-amber-600 text-center">
-          <p className="text-3xl md:text-5xl font-semibold">
+          <p className="text-3xl md:text-5xl font-semibold text-[#e14661]">
             <Link to="/">
               <FaHandPointLeft />
             </Link>

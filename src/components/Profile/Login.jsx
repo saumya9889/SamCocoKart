@@ -143,7 +143,7 @@ const Login = () => {
               'url("https://images.pexels.com/photos/7525164/pexels-photo-7525164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
           }}
         >
-          <div className="bg-slate-800 border border-slate-400 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative">
+          <div className="bg-[linear-gradient(120deg,_#ff5771a3_0%,_#ffffff_50%,_#ff69b4db_100%)] border border-slate-400 rounded-md p-8 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30 relative">
             <div>
               <h1 className="text-4xl font-bold text-white mb-6 text-center">
                 Login
@@ -199,7 +199,7 @@ const Login = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-amber-600 hover:text-white py-2 transition-colors duration-300"
+                  className="w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-[linear-gradient(135deg,_#ff99cc,_#ffffff)] hover:text-white py-2 transition-colors duration-300"
                 >
                   {loading ? "Logging in..." : "Login"}
                 </button>
@@ -207,7 +207,7 @@ const Login = () => {
                   type="button"
                   onClick={guestLogin}
                   disabled={loading}
-                  className="w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-amber-600 hover:text-white py-2 transition-colors duration-300"
+                  className="w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-[linear-gradient(135deg,_#ff99cc,_#ffffff)] hover:text-white py-2 transition-colors duration-300"
                 >
                   {loading ? "Logging in..." : "Guest Login"}
                 </button>

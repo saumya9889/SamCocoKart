@@ -1,6 +1,6 @@
 const Trusted = () => {
   return (
-    <section className="py-16 bg-gray-100 mx-[3rem] rounded-2xl">
+    <section className="py-16  mx-[3rem] rounded-2xl bg-[linear-gradient(120deg,_#ffb6c133_0%,_#ffffff_50%,_#ff69b457_100%)]">
       <div className="container mx-auto">
         <h3 className="text-center text-2xl font-bold capitalize text-gray-800 mb-8">
           Trusted By 1000+ Companies

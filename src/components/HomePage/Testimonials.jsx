@@ -24,7 +24,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-100 mx-[3rem] rounded-2xl">
+    <section className="py-20 bg-gray-100 mx-[3rem] rounded-2xl bg-[linear-gradient(120deg,_#ffb6c133_0%,_#ffffff_50%,_#ff69b457_100%)]">
       <div className="container mx-auto px-5">
         <h2 className="text-3xl font-bold text-center mb-12">
           What Our Customers Say

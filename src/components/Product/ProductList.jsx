@@ -56,7 +56,7 @@ const ProductList = () => {
 
       <div className="flex flex-col min-h-screen">
         <Navbar />
-        <div className="flex-grow mt-2 bg-[linear-gradient(135deg,_#ff99cc8a,_#ffffff)]">
+        <div className="flex-grow mt-2 bg-[linear-gradient(135deg,_rgba(255,153,204,0.2),_rgba(255,255,255,0.95))]">
           <h1 className="text-4xl font-bold tracking-normal leading-none my-4 sm:mx-12">
             All Products
           </h1>

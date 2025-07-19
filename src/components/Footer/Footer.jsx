@@ -11,9 +11,9 @@ import {
 const Footer = () => {
   return (
     <div>
-      <footer className="p-5 md:p-12 lg:p-25  leading-5">
-        <div className="bg-slate-300 rounded-lg">
-          <div className="py-6 md:py-12 border-t border-solid">
+      <footer className="p-5 md:p-12 lg:p-25 leading-5 bg-[linear-gradient(135deg,_rgba(255,153,204,0.2),_rgba(255,255,255,0.95))]">
+        <div className="bg-slate-300 rounded-lg bg-[linear-gradient(135deg, #ff99cc36, #ffffff)]">
+          <div className="py-6 md:py-12 border-t border-solid bg-[linear-gradient(135deg,_#ff99cc8a,_#ffffff)]">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mx-5">
                 {/* Company Info */}

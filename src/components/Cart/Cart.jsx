@@ -24,17 +24,17 @@ const Cart = () => {
   const altImage =
     "https://upload.wikimedia.org/wikipedia/commons/c/cd/Green_and_Black%27s_dark_chocolate_bar_2.jpg";
 
-  const cart = useSelector((state) => state.cart.cart);
-  const totalAmount = useSelector((state) => state.cart.totalAmount);
+  const cart = useSelector(state => state.cart.cart);
+  const totalAmount = useSelector(state => state.cart.totalAmount);
   const totalPriceWithTaxes = useSelector(
-    (state) => state.cart.totalPriceWithTaxes
+    state => state.cart.totalPriceWithTaxes
   );
-  const CGST = useSelector((state) => state.cart.CGST);
-  const SGST = useSelector((state) => state.cart.SGST);
-  const totalTax = useSelector((state) => state.cart.totalTax);
+  const CGST = useSelector(state => state.cart.CGST);
+  const SGST = useSelector(state => state.cart.SGST);
+  const totalTax = useSelector(state => state.cart.totalTax);
   const dispatch = useDispatch();
 
-  const handleRemove = (productId) => {
+  const handleRemove = productId => {
     dispatch(removeFromCart({ id: productId }));
   };
 
@@ -209,7 +209,7 @@ const Cart = () => {
                 <p className="text-gray-600">Your cart is empty.</p>
               ) : (
                 <ul>
-                  {cart.map((item) => (
+                  {cart.map(item => (
                     <li
                       key={item.id}
                       className="flex flex-col md:flex-row items-center justify-between border-b-2 py-2"
@@ -242,7 +242,7 @@ const Cart = () => {
               )}
             </section>
 
-            <section className="mt-8">
+            <section className="mt-8 bg-[linear-gradient(120deg,_#ffb6c133_0%,_#ffffff_50%,_#ff69b457_100%)]!important">
               {cart.length > 0 && (
                 <div>
                   <div className="mt-4">

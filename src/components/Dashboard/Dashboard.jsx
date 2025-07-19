@@ -17,14 +17,14 @@ const Dashboard = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-gray-100 min-h-screen">
+      <div className="bg-gray-100 min-h-screen bg-[linear-gradient(135deg,_rgba(255,153,204,0.2),_rgba(255,255,255,0.95))]">
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800">
             Dashboard
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div
-              className="bg-white shadow-md rounded-lg p-6 col-span-1"
+              className="bg-[linear-gradient(135deg,_#ff99cc40,_#ffffff)] shadow-md rounded-lg p-6 col-span-1"
               onClick={handleUserClick}
             >
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
@@ -34,7 +34,7 @@ const Dashboard = () => {
               {selected === "users" && <div> {/* User data goes here */} </div>}
             </div>
             <div
-              className="bg-white shadow-md rounded-lg p-6 col-span-1 lg:col-span-2"
+              className="bg-[linear-gradient(135deg,_#ff99cc40,_#ffffff)] shadow-md rounded-lg p-6 col-span-1 lg:col-span-2"
               onClick={handleProductClick}
             >
               <h3 className="text-xl font-semibold mb-4 text-gray-800">
